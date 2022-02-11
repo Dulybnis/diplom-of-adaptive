@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MQ-Diploma</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>MQ-Diploma</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="popup-background">
@@ -43,13 +43,9 @@
 
     <header class="header">
         <div class="container">
-          <div class="background">
+          <div class="background">            
+            
             <div class="nav-bar">
-              <div>
-                <a class="logo-link" href="#">
-                <img class="logo" src="images/noemi-logo.svg" alt="логотип">
-                </a>
-              </div>
               <nav class="menu">
                 <ul class="menu-list">
                   <li class="menu-list-item">
@@ -70,9 +66,19 @@
                   <li class="menu-list-item">
                     <a class="menu-link" href="#contacts">Контакты</a>
                   </li>
-                </ul>    
+                </ul>
+                <div class="burger-menu">
+                  <div class="burger-menu-item"></div>
+                  <div class="burger-menu-item"></div>
+                  <div class="burger-menu-item"></div>
+                </div>
               </nav>
             </div>
+            <div class="logo-group">
+              <a class="logo-link" href="#">
+              <img class="logo" src="images/noemi-logo.svg" alt="логотип">
+              </a>
+          </div>
             <div class="welcome-title-box">
               <h1 class="welcome-title">блог о творчестве, спорте, и образе жизни</h1>
             </div>
@@ -80,11 +86,10 @@
         </div>
       </header>
 
-      <div class="in-trend-box">
+      <section class="in-trend-box">
         <header class="title-post">
-            <h3 class="posts-header">Сейчас в тренде</h3>
+            <h2 class="posts-header">Сейчас в тренде</h2>
         </header>
-
         <aside class="in-trend-items">
             <article class="in-trend-item">
                 <img class="in-trend-image" src="images/trend1.jpg" alt="В тренде 1">
@@ -159,9 +164,9 @@
                 </div>
             </article>
         </aside>
-      </div>
+      </section>
             
-      <div class="main">        
+      <section class="main">        
         <main class="news-list">
           <article class="title">
             <img class="title-image" src="images/last-post1.jpg" alt="10 мест, ради которых стоит проснуться на рассвете">
@@ -502,73 +507,94 @@
             </div>  
           </section>
         </aside>
-        </div>
+      </section>
       
-        <div class="shop-box">
-          <header class="title-post">
-              <h3 class="posts-header">Наши изделия</h3>
-          </header>
-
-          <aside class="shop-items">
-            <article class="shop-item">
+      <section class="shop-box">
+        <header class="title-post">
+            <h2 class="posts-header">Наши изделия</h2>
+        </header>
+        <aside class="shop-items">
+          <article class="shop-item">
+            <div class="shop-image-box">
+              <picture>
+                <source class="shop-image" srcset="images/shop-item-mobile1.jpg"
+                  media="(max-width: 640px)">
+                <source class="shop-image" srcset="images/shop-item-tablet1.jpg"
+                  media="(min-width: 641px) and (max-width: 1199px)"> 
                 <img class="shop-image" src="images/shop-item-desk1.jpg" alt="Наши изделия 1">
-                <div class="shop-group">
-                  <div class="shop-group-border">
-                    <header class="shop-header">
-                      <h3 class="shop-name">Подушки на диван</h3>
-                      <p class="shop-description">Набор из двух подушек с модными принтами. Видео о создании <a class="shop-link" href="#0">здесь</a>.</p>                     
-                    </header>
-                    <div class="shop-box-price">
-                      <ul class="shop-price">
-                        <li class="shop-old-price">1000 ₽</li>
-                        <li class="shop-new-price">800 ₽</li>
-                      </ul>
-                      <button class="shop-button">в магазин</button>
-                    </div>
-                  </div>
-                </div>
-            </article>
-
-            <article class="shop-item">
-              <img class="shop-image" src="images/shop-item-desk2.jpg" alt="Наши изделия 2">
-              <div class="shop-group">
-                <div class="shop-group-border">
-                  <header class="shop-header">
-                    <h3 class="shop-name">Кукла «Зайчик»</h3>
-                    <p class="shop-description">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a class="shop-link" href="#0">весенняя серия постов</a> в блоге и несколько подкастов.</p>                     
-                  </header>
-                  <div class="shop-box-price">
-                    <ul class="shop-price">                      
-                      <li class="shop-new-price">3500 ₽</li>
-                    </ul>
-                    <button class="shop-button">в магазин</button>
-                  </div>
+              </picture>
+            </div>
+            <div class="shop-group">
+              <div class="shop-group-border">
+                <header class="shop-header">
+                  <h3 class="shop-name">Подушки на диван</h3>
+                  <p class="shop-description">Набор из двух подушек с модными принтами. Видео о создании <a class="shop-link" href="#0">здесь</a>.</p>                     
+                </header>
+                <div class="shop-box-price">
+                  <ul class="shop-price">
+                    <li class="shop-old-price">1000 ₽</li>
+                    <li class="shop-new-price">800 ₽</li>
+                  </ul>
+                  <button class="shop-button">в магазин</button>
                 </div>
               </div>
-            </article>
+            </div>
+          </article>
 
-            <article class="shop-item">
-              <img class="shop-image" src="images/shop-item-desk3.jpg" alt="Наши изделия 3">
-              <div class="shop-group">
-                <div class="shop-group-border">
-                  <header class="shop-header">
-                    <h3 class="shop-name">Шестиугольная рамка</h3>
-                    <p class="shop-description">Необычная рамка для украшения дома из видео <a class="shop-link" href="#0">«Как сделать рамку из подручныз средств за 30 минут»</a></p>                     
-                  </header>
-                  <div class="shop-box-price">
-                    <ul class="shop-price">
-                      <li class="shop-old-price">500 ₽</li>
-                      <li class="shop-new-price">400 ₽</li>
-                    </ul>
-                    <button class="shop-button">в магазин</button>
-                  </div>
+          <article class="shop-item">
+            <div class="shop-image-box">
+              <picture>
+                <source class="shop-image" srcset="images/shop-item-mobile2.jpg"
+                  media="(max-width: 640px)">
+                <source class="shop-image" srcset="images/shop-item-tablet2.jpg"
+                  media="(min-width: 641px) and (max-width: 1199px)"> 
+                  <img class="shop-image" src="images/shop-item-desk2.jpg" alt="Наши изделия 2">
+              </picture>
+            </div>
+            <div class="shop-group">
+              <div class="shop-group-border">
+                <header class="shop-header">
+                  <h3 class="shop-name">Кукла «Зайчик»</h3>
+                  <p class="shop-description">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a class="shop-link" href="#0">весенняя серия постов</a> в блоге и несколько подкастов.</p>                     
+                </header>
+                <div class="shop-box-price">
+                  <ul class="shop-price">                      
+                    <li class="shop-new-price">3500 ₽</li>
+                  </ul>
+                  <button class="shop-button">в магазин</button>
                 </div>
               </div>
-            </article>
+            </div>
+          </article>
+
+          <article class="shop-item">
+            <div class="shop-image-box">
+              <picture>
+                <source class="shop-image" srcset="images/shop-item-mobile3.jpg"
+                  media="(max-width: 640px)">
+                <source class="shop-image" srcset="images/shop-item-tablet3.jpg"
+                  media="(min-width: 641px) and (max-width: 1199px)"> 
+                  <img class="shop-image" src="images/shop-item-desk3.jpg" alt="Наши изделия 3">
+              </picture>
+            </div>
+            <div class="shop-group">
+              <div class="shop-group-border">
+                <header class="shop-header">
+                  <h3 class="shop-name">Шестиугольная рамка</h3>
+                  <p class="shop-description">Необычная рамка для украшения дома из видео <a class="shop-link" href="#0">«Как сделать рамку из подручныз средств за 30 минут»</a></p>                     
+                </header>
+                <div class="shop-box-price">
+                  <ul class="shop-price">
+                    <li class="shop-old-price">500 ₽</li>
+                    <li class="shop-new-price">400 ₽</li>
+                  </ul>
+                  <button class="shop-button">в магазин</button>
+                </div>
+              </div>
+            </div>
+          </article>
         </aside>
-
-        </div>
-
+      </section>
         
       <footer class="footer">
         <adress>
